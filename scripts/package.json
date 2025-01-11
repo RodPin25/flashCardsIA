@@ -1,7 +1,7 @@
 {
   "name": "scripts",
   "version": "1.0.0",
-  "main": "flip-divs.js",
+  "main": "get-flash-ia.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@google/generative-ai": "^0.21.0"
+    "@google/generative-ai": "^0.21.0",
+    "multer": "^1.4.5-lts.1"
   }
 }
