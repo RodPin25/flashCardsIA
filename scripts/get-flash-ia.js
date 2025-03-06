@@ -14,7 +14,7 @@ const model = genAI.getGenerativeModel({ model: 'models/gemini-1.5-flash' }); //
 const storage = multer.memoryStorage(); // Almacenar archivos en memoria
 const upload = multer({
   storage,
-  limits: { fileSize: 1000000 }, // Tamaño máximo del archivo: 1 MB
+  limits: { fileSize: 10000000 }, // Tamaño máximo del archivo: 1 MB
   fileFilter: (req, file, cb) => {
     if (file.mimetype === 'application/pdf') {
       cb(null, true); // Aceptar solo archivos PDF
